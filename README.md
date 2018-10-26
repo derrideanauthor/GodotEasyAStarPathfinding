@@ -13,7 +13,8 @@ This script contains the following path finding modes:
 
 As of yet there is no weighting options. Please contribute if you feel this is a feature worth adding.
 
-#Usage
+Usage
+------------
 
 1. Prepare a 2D array representing walkable (1) and unwalkable/blocked (0) tiles in your game. E.g. a map with 3 rows and 4 columns would look like this:
 
