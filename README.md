@@ -16,6 +16,7 @@ As of yet there is no weighting options. Please contribute if you feel this is a
 #Usage
 
 1. Prepare a 2D array representing walkable (1) and unwalkable/blocked (0) tiles in your game. E.g. a map with 3 rows and 4 columns would look like this:
+
   `var map = 
   [[0, 0, 0, 0], 
   [1, 1, 1, 0], 
@@ -24,13 +25,16 @@ As of yet there is no weighting options. Please contribute if you feel this is a
   *This can be a bit impractical. I will upload a godot example soon to show you a great way to set it up directly from checking certain tiles in your tilemap (assuming you are using a tilemap)*
 
 2. Initiate the pathfinder class:
+
   `const AStarMemtronic = preload("res://path_to_resource/AStar_memtronic.gd")`
 
 3. Use the 'find_path' class method with the following 4 parameters:
+
   - Array, the map (see 2)
   - Vector2, start coordinates
   - Vector2, end coordinates
   - String, path finding mode (see above, optional)
   
 4. Capture the resulting path; a 1D array containing Vector2 coordinates.
-   `var unit_path = PathFinder.find_path(map, Vector2(10, 9), Vector2(6, 17), "DiagonalFree")
+
+   `var result = PathFinder.find_path(map, Vector2(10, 9), Vector2(6, 17), "DiagonalFree")`
