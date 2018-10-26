@@ -23,7 +23,7 @@ Usage
   [1, 1, 1, 0], 
   [0, 0, 0, 0]]`
 
-  *This can be a bit impractical. I will upload a godot example soon to show you a great way to set it up directly from checking certain tiles in your tilemap (assuming you are using a tilemap)*
+  *This can be a bit impractical if you have a large map. I will upload a Godot example soon to show you a great way to set it up directly from checking certain tiles in your tilemap (assuming you are using a tilemap)*
 
 2. Initiate the pathfinder class:
 
