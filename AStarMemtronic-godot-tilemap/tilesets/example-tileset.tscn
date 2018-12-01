@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://tilesets/tileset-not-for-free-use.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+[node name="grass-1" type="Sprite" parent="." index="0"]
+
+position = Vector2( 32, 33 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="grass-2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 99, 33 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 132, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="water-blocked" type="Sprite" parent="." index="2"]
+
+position = Vector2( 166, 33 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 132, 132, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="shore-blocked" type="Sprite" parent="." index="3"]
+
+position = Vector2( 233, 33 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 198, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+
