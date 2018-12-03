@@ -17,10 +17,12 @@ var map_size = Vector2(0, 0)
 var tile_grid = []
 
 
-#Pathfinder, grids
-var PathFinder
+
 #Preload the pathfinder class 
 const AStarMemtronic = preload("res://AStar_memtronic.gd")
+
+#Instantiate the pathfinder class 
+onready var PathFinder = AStarMemtronic.new()
 
 #Reference to the Game node
 onready var gameNode = get_node("..")
@@ -93,9 +95,6 @@ func create_tile_grid():
 #	var cells = $TileMap.get_used_cells_by_id(2) 
 #	for cell in cells:
 #		tile_grid[cell.y][cell.x] = 1
-
-	# 3- Instantiate the pathfinder script 
-	PathFinder = AStarMemtronic.new()
 
 # this function can be run from the Game node
 func get_path(startPos, endPos, method) :
