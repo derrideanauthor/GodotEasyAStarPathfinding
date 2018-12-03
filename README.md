@@ -28,6 +28,7 @@ Usage
 2. Initiate the pathfinder class:
 
   `const AStarMemtronic = preload("res://path_to_resource/AStar_memtronic.gd")`
+  
   `onready var PathFinder = AStarMemtronic.new()`
 
 3. Use the 'find_path' class method with the following 4 parameters:
