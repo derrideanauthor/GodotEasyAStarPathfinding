@@ -5,9 +5,7 @@ extends Node2D
 onready var map = get_node("..")
 var gridColor = Color(0.5, 0.5, 0.5, 1)
 var showGrid = false
-var showAllOccupiedTiles = false #ground only at this point
 
-#dictionary containing unit paths to be shown
 var gridPath = []
 
 var font = DynamicFont.new()
