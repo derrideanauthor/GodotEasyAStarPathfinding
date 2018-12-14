@@ -97,7 +97,7 @@ func create_tile_grid():
 #		tile_grid[cell.y][cell.x] = 1
 
 # this function can be run from the Game node
-func get_path(startPos, endPos, method) :
+func make_path(startPos, endPos, method) :
 	
 	# - Using the find_path method we get an array containing Vector2 tile coordinates of the calculated path
 	#   a sprite could follow. E.g. [Vector2(1,2), Vector2(2,2), ...] 
