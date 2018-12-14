@@ -33,7 +33,7 @@ Usage
 
 3. Use the 'find_path' class method with the following 4 parameters:
 
-  - Array, the map (see 2)
+  - Array, the map (see 1)
   - Vector2, start coordinates
   - Vector2, end coordinates
   - String, path finding mode (see above, optional)
