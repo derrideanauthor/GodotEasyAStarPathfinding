@@ -16,7 +16,7 @@ As of yet there is no weighting options. Please contribute if you feel this is a
 Usage
 ------------
 
-1. Prepare a 2D array representing walkable (1) and unwalkable/blocked (0) tiles in your game. E.g. a map with 3 rows and 4 columns would look like this:
+1. Prepare a 2D array representing walkable (0) and unwalkable/blocked (1) tiles in your game. E.g. a map with 3 rows and 4 columns would look like this:
 
   `var map = 
   [[0, 0, 0, 0], 
