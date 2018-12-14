@@ -17,7 +17,7 @@ func _ready():
 	#It returns an array containing Vector2 tile coordinates for each step in the path :. (column, row)
 	var startPos = Vector2(0,4)
 	var endPos = Vector2(5, 6)
-	var path = $Map.get_path(startPos, endPos, "DiagonalFree")
+	var path = $Map.make_path(startPos, endPos, "DiagonalFree")
 	
 	#- * Try using your own start and end positions to see pathfinder solve it
 	#- * Invalid start or end positions (according to the tilemap) returns [] 
