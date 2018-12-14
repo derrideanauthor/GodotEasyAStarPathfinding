@@ -4,7 +4,7 @@ extends Node2D
 
 onready var map = get_node("..")
 var gridColor = Color(0.5, 0.5, 0.5, 1)
-var showGrid = false
+var showGrid = true
 
 var gridPath = []
 
@@ -21,8 +21,6 @@ func _process(delta):
 
 func draw_grid():
 	
-	var rgba = gridColor
-	var color = gridColor
 	var map_rows = map.map_rows
 	var map_cols = map.map_cols
 	var map_size = map.map_size
@@ -35,13 +33,13 @@ func draw_grid():
 	for r in range(1, map_rows):
 		var startLine = Vector2(0, r * tileSize.y) + position
 		var endLine = Vector2(map_size.x, r * tileSize.y) + position
-		draw_line(startLine, endLine, color, 1.0, false)
+		draw_line(startLine, endLine, gridColor, 1.0, false)
 		
 		
 	for c in range(1, map_cols):
 		var startLine = Vector2(c * tileSize.x, 0) + position
 		var endLine = Vector2(c * tileSize.x, map_size.y) + position
-		draw_line(startLine, endLine, color, 1.0, false)
+		draw_line(startLine, endLine, gridColor, 1.0, false)
 	
 	for r in range(map_rows):
 		for c in range(map_cols):			
